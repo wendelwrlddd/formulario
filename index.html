@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultoria Gratuita para Escalar Suas Vendas</title>
+    <!-- We will let Vite inject the module script which contains CSS imports if necessary, or we can just import style here -->
+  </head>
+  <body>
+    <div id="app">
+      <div class="container" id="form-container">
+        
+        <div id="form-screen">
+          <div class="header">
+            <h1 class="title">Receba uma Consultoria Gratuita para Escalar Suas Vendas</h1>
+            <p class="subtitle">Responda rápido e descubra como vender mais online</p>
+          </div>
+
+          <form id="lead-form">
+            <div class="form-group">
+              <label class="form-label" for="name">Nome completo</label>
+              <input type="text" id="name" class="form-input" placeholder="Seu nome" required />
+              <div class="error-msg" id="name-error">Por favor, insira seu nome.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" class="form-input" placeholder="(00) 00000-0000" inputmode="numeric" required />
+              <div class="error-msg" id="whatsapp-error">Insira um número válido.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Seu negócio tem um site?</label>
+              <div class="radio-group">
+                <input type="radio" name="has_business" id="business-yes" value="yes" class="radio-input" required />
+                <label for="business-yes" class="radio-label">Sim</label>
+                
+                <input type="radio" name="has_business" id="business-no" value="no" class="radio-input" required />
+                <label for="business-no" class="radio-label">Não</label>
+              </div>
+            </div>
+
+            <div id="conditional-fields" class="conditional-fields">
+              <div class="form-group">
+                <label class="form-label" for="problem">Qual seu maior problema hoje ao vender online?</label>
+                <textarea id="problem" class="form-textarea" placeholder="Ex: poucos clientes, site não converte, anúncios caros..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="url">(Opcional) URL do site ou @ do Instagram</label>
+                <input type="text" id="url" class="form-input" placeholder="Ex: @sualoja ou www.seusite.com" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar formulário para consultoria grátis!</button>
+          </form>
+        </div>
+
+        <div id="success-screen">
+          <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h2 class="success-title">✅ Recebemos suas informações!</h2>
+          <p class="success-subtitle">Nossa equipe vai entrar em contato com você pelo WhatsApp em breve.</p>
+          
+          <div class="success-highlight">
+            Fique atento ao seu WhatsApp 👀
+          </div>
+          
+          <button type="button" id="btn-back" class="btn-secondary">Voltar ao início</button>
+        </div>
+
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

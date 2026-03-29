@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Dashboard</title>
+  </head>
+  <body>
+    <div id="dashboard-app">
+      <div class="dash-container">
+        <h1 class="dash-title">Painel de Leads Capturados</h1>
+        <p class="dash-subtitle">Consulte todas as submissões abaixo.</p>
+        
+        <div class="table-wrapper">
+          <table class="leads-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>WhatsApp</th>
+                <th>Tem Site?</th>
+                <th>Problema</th>
+                <th>URL/@</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody id="leads-body">
+              <tr>
+                <td colspan="6" class="text-center">Aguarde... conectando ao banco de dados do Railway!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="/" class="btn-secondary" style="text-decoration: none; display: inline-block;">Voltar ao Formulário principal</a>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/dashboard.js"></script>
+  </body>
+</html>
