@@ -87,6 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
         url: document.getElementById('url').value.trim() || undefined
       };
 
+      // Dispara o evento de Lead no Pixel
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead');
+      }
+
       fetch('https://valiant-spirit-production.up.railway.app/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
